@@ -7,20 +7,42 @@ margin: 0;
 
 h1{
 font-style: italic;
-color: #ffffff;
+color: #000000;
 {text-align: center;}
+	margin-left: 550px;
+	font-size: 50px;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
 }
+
 h2{
 font-style: italic;
-color:  #ffffff;
+color: #000000;
+{text-align: center;}
+	margin-left: 430px;
+	font-size: 50px;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
 }
+
 p{
 font-style: 300px;
 color:  #000000;
-		font-size: 15px;
-padding-left: 500px;
-	padding-right: 270px;
-	margin-top: 90px;
+font-size: 22px;/*font-size:1vw; /*vw adjusts text to view-port width of screen*/
+margin-left: 400px;
+
+}
+/*footer*/
+h3{
+font-style: 300px;
+color:  #000000;
+		font-size: 22px;
+padding-left: 370px;
+
+}
+ul{
+	font-style: italic;
+color: #000000;
+{text-align: center;}
+	margin-left: 400px;
+	margin-top: -30px;
+	font-size: 22px;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
 }
 /*code for TEXT WRAPS starts here*/
 
@@ -36,22 +58,22 @@ padding-left: 500px;
 	  width: 20%;/*controlling size of TEXT WRAP*/
   }
   
-    img {
+
+    .img1 {
   border-radius: 0%;
-	margin-top: 50px;
-	  margin-left: 5px;/*images*/
-		padding-left: 400px;
+	margin-top: 5px;
+	  margin-left: 00px;/*images*/
 }
 .grid-container{
 display: grid;
 grid-template-columns: 200px auto;
-grid-template-rows: 400px 80px 1500px 80px;
+grid-template-rows: 80px 400px 1100px 100px;
 height: 100vh;
 }
 /* CSS for styling my navigation/Menu */
 .nav{
 box-sizing: border-box;
-	background-color: #93c47d;/*Green*/
+	background-color: #62b6cb;/*Green*/
 	grid-column-start: 1;
 	grid-column-end: span 2;
 	
@@ -149,7 +171,7 @@ box-sizing: border-box;
 		padding: 80px;
 		padding-top: 125px;
 		
-		background: #FFD533;
+		background: #87C8D8;
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		/* to stop flickering of the textin safari*/
@@ -176,7 +198,7 @@ box-sizing: border-box;
 
 .header{
 box-sizing: border-box;
-background-color: #ffd966;
+background-color: #edede9;
 background-size: cover;
 grid-column-start: 1;
 grid-column-end: span 2;
@@ -198,7 +220,7 @@ label {
 }
 
 input[type-submit] {
-	background-color: #ced4da;
+	background-color: #bee9e8;
 	color: white;
 	padding: 12px 20px;
 	border: none;
@@ -214,7 +236,8 @@ input[type=submit]:hover{
 
 .contact_container{
 	border-radius: 5px;
-	background-color: #d9d9d9;
+	background-color: #a9d6e5;
+	margin-top: -80px;
 	padding: 20px;
   font-family: "Titan One", serif;
 }
@@ -239,7 +262,7 @@ input[type=submit]:hover{
 
 .content{
  box-sizing: border-box;
- background-color: #6d9eeb; /*blue*/
+ background-color: #F8F9FA; /*blue*/
  position: relative;
  padding-left:10px;
  grid-column-start: 1;
@@ -313,7 +336,7 @@ overflow: auto;
 	font-size: 20px;
 	border: none;
 	outline: none;
-	background-color: #FFD533;/*Calling up my varible Color to be used.*/
+	background-color: #62b6cb;/*Calling up my varible Color to be used.*/
 	color: black;
 	cursor: pointer; /* Setting the icon to be used for my button on hover. https://www.w3schools.com/cssref/trvit.php?filename=trvcss_cursor. */
 	padding: 15px;
@@ -323,6 +346,6 @@ overflow: auto;
 	background-color: #ffffff; /*Calling up my varible Color to be used.*/
 }
 .footer{
-background-color: #e06666; /*green*/
+background-color: #62b6cb; /*green*/
 grid-column-end: span 2;
 }
