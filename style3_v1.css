@@ -7,9 +7,25 @@ margin: 0;
 
 h1{
 font-style: italic;
-color: #ffffff;
-{text-align: center;}
-	margin-left: 500px;
+color: #000000;
+text-align: center;
+	font-size: 5vw;
+}
+
+h3{
+font-style: italic;
+color:  #000000;
+		font-size: 1.5vw;
+text-align: center;
+
+}
+p{
+font-style: italic;
+color:  #000000;
+		font-size: 2vw;
+text-align: center;
+	margin-top: -20px;
+
 }
 
 /*code for TEXT WRAPS starts here*/
@@ -27,24 +43,37 @@ color: #ffffff;
   }
   
     img {
-  border-radius: 0%;
-	margin-top: 50px;
-	  margin-left: 150px;/*images*/
+ border-radius: 0%;
+	display: inline;
+		margin-left: 150px;
+		   max-width:5000px;
+	  width: 20%;
 }
-.grid-container{
+    
+   .img1 {
+   border-radius: 0%;
+	  margin-left: 0px;/*images*/
+		 max-width: 5000px;
+		width: 100%;
+}
+/*.grid-container{
 display: grid;
 grid-template-columns: 200px auto;
-grid-template-rows: 400px 80px 500px 80px;
+grid-template-rows: 80px 400px 500px 100px;
 height: 100vh;
-}
+}*/
 /* CSS for styling my navigation/Menu */
 .nav{
 box-sizing: border-box;
-	background-color: #93c47d;/*Green*/
+	background-color: #62b6cb;/*Green*/
 	grid-column-start: 1;
 	grid-column-end: span 2;
+	height: 15vh;
+		 max-width: 5000px;
+	  width: 100%;
 	
-}/*Burger Menu Starts Here*/
+}
+/*Burger Menu Starts Here*/
 #menuToggle
 {
 	display: block;
@@ -138,7 +167,7 @@ box-sizing: border-box;
 		padding: 80px;
 		padding-top: 125px;
 		
-		background: #FFD533;
+		background: #87C8D8;
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		/* to stop flickering of the textin safari*/
@@ -165,20 +194,26 @@ box-sizing: border-box;
 
 .header{
 box-sizing: border-box;
-background-color: #ffd966;
+background-color: #ffffff;
 background-size: cover;
 grid-column-start: 1;
 grid-column-end: span 2;
+	height: fit-content;
+		 max-width: 5000px;
+	  width: 100%;	
 }
 
 
 .content{
  box-sizing: border-box;
- background-color: #6d9eeb; /*blue*/
+ background-color: #ffffff; /*blue*/
  position: relative;
  padding-left:10px;
  grid-column-start: 1;
 grid-column-end: span 2; /*box to end*/
+	height: fit-content;
+		 max-width: 5000px;
+	  width: 100%;	
 }
 
 .scroll-area{
@@ -248,7 +283,7 @@ overflow: auto;
 	font-size: 20px;
 	border: none;
 	outline: none;
-	background-color: #FFD533;/*Calling up my varible Color to be used.*/
+	background-color: #62b6cb;/*Calling up my varible Color to be used.*/
 	color: black;
 	cursor: pointer; /* Setting the icon to be used for my button on hover. https://www.w3schools.com/cssref/trvit.php?filename=trvcss_cursor. */
 	padding: 15px;
@@ -258,6 +293,9 @@ overflow: auto;
 	background-color: #ffffff; /*Calling up my varible Color to be used.*/
 }
 .footer{
-background-color: #e06666; /*green*/
+background-color: #62b6cb; /*green*/
 grid-column-end: span 2;
+height: 15vh;
+		 max-width: 5000px;
+	  width: 100%;	
 }
