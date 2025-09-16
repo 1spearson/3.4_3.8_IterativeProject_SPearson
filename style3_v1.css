@@ -19,6 +19,13 @@ color:  #000000;
 text-align: center;
 
 }
+h6{
+	font-style: italic;
+color: #000000;
+text-align: center;
+	font-size: 1vw;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
+	margin-top: 0px;
+}
 p{
 font-style: italic;
 color:  #000000;
