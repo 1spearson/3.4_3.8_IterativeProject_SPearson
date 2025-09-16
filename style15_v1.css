@@ -70,6 +70,8 @@ iframe {
 	float: right;
 	margin-top: 0px; /*icons*/
 	  margin-right: 100px;
+		   max-width:5000px;
+	  width: 19%;
 }
 .image2 {
   border-radius: 0%;
