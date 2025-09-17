@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>Good News</title>
+	
+	<!--Encoding is unicode-->
+	<meta charset="utf-8">
+	<!--compatible with Microsoft Edge Broswer-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--Import code needed for site to be responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Import keywords for search engines-->
+	<meta name="Keywords" content="Good News, Christian, Christianity, Jesus"/>
+	<meta name="Author" content="Summer Pearson"/>
+	<meta name="Description" content="This website helps the Tawa Community to the good news which is Jesus"/>
+	
+	<!-- import the webpage's stylesheet-->
+	<link rel="stylesheet" href="css/style4_v2.css">
+	
+	<!-- import the webpage's javascript file-->
+	<script src="js/script.js" defer></script>
+</head>
+	
+	<body>
+	<div class="grid-container">
+			<div class="nav">
+					<nav role="navigation">
+					<div id="menuToggle">
+					<input type="checkbox" />
+					
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					
+					<ul id="menu">
+						<a href="index_v2.html"><li>Home</li></a>
+						<a href="index2_v2.html"><li>Bible Stories</li></a>
+						<a href="index3_v2.html"><li>Celebrations</li></a>
+						<a href="index4_v2.html"><li>Contact</li></a>
+					</ul>
+					</div>
+					</nav>
+				
+		</div>
+		<div class="header">
+<a href="index_v2.html"><img src="images/Screenshot 2025-07-29 101009.png"class="img1"alt="home button"/></a>
+			</div>
+			
+		<div class="content">
+			<h1>Contact</h1>
+					<?php
+//Pull Links from the nav.php page and places them in the navigation
+						require("nav.php"); //require' is 100% needed for the site to run.
+					?>
+				<br><br><hr>
+					<?php
+				//Get the connection to the database in phpMyAdmin.
+						require_once("13DIT_phpForm_mysqli.php");
+					?>
+					<br>
+				<!--Form starts here -->
+
+				<div class="contact_container">
+					<form action="connect.php" method = "post">
+										<!--name feild starts-->
+						<div class="row">
+							<div class="column">
+								<label for="name">Full Name</label>
+							</div>
+								<div class="column2">
+									<input type="text" id="name" name="name" placeholder="Your full name">
+								</div>
+								</div>
+							<!--name feild ends-->
+							<!--email feild starts-->
+							<div class="row">
+								<div class="column">
+									<label for="email">Email Address</label>
+								</div>
+								<div class="column2">
+									<input type="text" id="email" name="email" placeholder="Your email address">
+								</div>
+								</div>
+							<!--email feild ends-->
+							
+							<!--contact number feild starts-->
+							<div class="row">
+								<div class="column">
+									<label for="contactnumber">Contact Number</label>
+								</div>
+								<div class="column2">
+									<input type="text" id="contactnumber" name="contactnumber" placeholder=" A Contact Number">
+								</div>
+							</div>
+							<!--subject feild starts-->
+							<div class="row">
+								<div class="column">
+									<label for="subject">Subject</label>
+								</div>
+								<div class="column2">
+									<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+								</div>
+							</div>
+
+							<!--submit feild starts-->
+							
+							<div class="row">
+								<input type="Submit" value="Submit">
+							</div>
+
+
+				</form>
+
+		</div>
+			<br>
+			<hr>
+			<h2>Churches in Tawa</h2>
+			<ul>
+				<li><a href="https://tawa.salvationarmy.org.nz/">Tawa Salvation Army, 177 Main Road, Tawa</a></li>
+				<br>
+<li><a href="https://tawabaptist.org.nz/">Tawa Baptist Church, 225 Main Road Tawa</a></li><br>
+<li><a href="https://www.connectchurch.nz/tawa">Tawa Connect Church,236 Main Road Tawa</a></li><br>
+<li><a href="https://tawaunionchurch.org.nz/">Tawa Union Church, 6 Elena Place Tawa</a></li><br>
+<li><a href="https://www.tac.org.nz/">Tawa Anglicans Church, 1 Lyndhurst Road Tawa</a></li><br>
+<li><a href="https://northernhillschurch.nz/">Northern Hills Church,  3 Elena Place Tawa</a></li><br>
+			</ul>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		</div>
+		<div class="footer">
+		<h3>Summer Pearson © copyright, all rights reserved, 2025</h3>
+		</div>
+		</div>
+					<!--javascript goes down here. back to top button.For top button to work.-->
+	<script type="text/javascript" src="js/backtotop.js"></script>
+	</body>
+</html>
