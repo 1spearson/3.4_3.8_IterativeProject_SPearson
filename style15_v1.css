@@ -7,44 +7,29 @@ margin: 0;
 
 h1{
 font-style: italic;
-color: #000000;
-text-align: center;
-	font-size: 5vw;
+color: #ffffff;
+{text-align: center;}
+	padding-left: 500px;
 }
 h2{
 font-style: italic;
-color:  #000000;
-	text-align: center;
-	font-size: 4vw;
-	margin-top: -20px;
-}
-h3{
-font-style: 300px;
-color:  #000000;
-		font-size: 1.5vw;
-text-align: center;
-}
-
-h6{
-font-style: italic;
-color: #000000;
-text-align: center;
-	font-size: 1vw;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
-	margin-top: 0px;
+color: #ffffff;
+{text-align: center;}
+	padding-left: 500px;
 }
 p{
 font-style: 300px;
 color:  #000000;
-		font-size: 2vw;
-text-align: center;
-	margin-top: -20px;
+		font-size: 15px;
+padding-left: 200px;
+	padding-right: 200px;
 }
 ul{
 font-style: 300px;
 color:  #000000;
-		font-size: 2vw;
-text-align: center;
-	margin-top: -20px;
+		font-size: 15px;
+padding-left: 200px;
+	padding-right: 200px;
 }
 /*code for TEXT WRAPS starts here*/
 
@@ -59,50 +44,41 @@ text-align: center;
 	  max-width: 390px;/*size of TEXT WRAP IMAGE*/
 		  width: 50%;/*controlling size of TEXT WRAP*/
  	 }
-   
-iframe {
-  max-width: 70%;
-  height: 50vh;                           
-}
-
+ 
 .image1 {
   border-radius: 0%;
 	float: right;
-	margin-top: 0px; /*icons*/
-	  margin-right: 100px;
-		   max-width:5000px;
-	  width: 19%;
+	margin-top: 50px; /*icons*/
+	  margin-right: 400px;
 }
 .image2 {
   border-radius: 0%;
-	display: inline;
-		margin-left: 1px;
-		   max-width:5000px;
-	  width: 5%;
-
-}
-      .img1 {
-  border-radius: 0%;
-	  margin-left: 0px;/*images*/
-		 max-width: 5000px;
-		width: 100%;	
+	margin-top: 50px;
+	  margin-left: 500px;/*images*/
 }
 
-/*.grid-container{
+.grid-container{
 display: grid;
 grid-template-columns: 200px auto;
-grid-template-rows: 80px 400px 800px 80px;
+grid-template-rows: 80px 400px 1000px 80px;
 height: 100vh;
-}*/
-/* CSS for styling my navigation/Menu */
+}
+.header{
+box-sizing: border-box;
+background-color: #ffd966;
+background-size: cover;
+grid-column-start: 1;
+grid-column-end: span 2;
+	/*height: 50vh; /* view-port height is height of viewing area on screen*/
+}
+
 .nav{
 box-sizing: border-box;
-	background-color: #62b6cb;/*Green*/
+	background-color: #93c47d;/*Green*/
 	grid-column-start: 1;
-	grid-column-end: span 2;
-	height: 15vh;
-		 max-width: 5000px;
-	  width: 100%;
+	grid-column-end: span 2;	
+	/*max-width: 2300px; /*can be used to set a fixed max width*/
+	
 }/*Burger Menu Starts Here*/
 #menuToggle
 {
@@ -197,7 +173,7 @@ box-sizing: border-box;
 		padding: 80px;
 		padding-top: 125px;
 		
-		background: #87C8D8;
+		background: #FFD533;
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		/* to stop flickering of the textin safari*/
@@ -222,28 +198,15 @@ box-sizing: border-box;
 	/* Burger Menu Ends here */
 	
 
-.header{
-box-sizing: border-box;
-background-color: #ffffff;
-background-size: cover;
-grid-column-start: 1;
-grid-column-end: span 2;
-		height: fit-content;
-		 max-width: 5000px;
-	  width: 100%;
-}
 
 
 .content{
  box-sizing: border-box;
- background-color: #ffffff; /*blue*/
+ background-color: #6d9eeb; /*blue*/
  position: relative;
  padding-left:10px;
  grid-column-start: 1;
 grid-column-end: span 2; /*box to end*/
-		height: fit-content;
-		 max-width: 5000px;
-	  width: 100%;
 }
 
 .scroll-area{
@@ -313,7 +276,7 @@ overflow: auto;
 	font-size: 20px;
 	border: none;
 	outline: none;
-	background-color: #62b6cb;/*Calling up my varible Color to be used.*/
+	background-color: #FFD533;/*Calling up my varible Color to be used.*/
 	color: black;
 	cursor: pointer; /* Setting the icon to be used for my button on hover. https://www.w3schools.com/cssref/trvit.php?filename=trvcss_cursor. */
 	padding: 15px;
@@ -323,9 +286,6 @@ overflow: auto;
 	background-color: #ffffff; /*Calling up my varible Color to be used.*/
 }
 .footer{
-background-color: #62b6cb; /*green*/
+background-color: #e06666; /*green*/
 grid-column-end: span 2;
-			height: 15vh;
-		 max-width: 5000px;
-	  width: 100%;
 }
