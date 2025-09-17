@@ -2,58 +2,25 @@
 
 body{
 font-family: helvetica, arial, sana-serif;
-margin: 0;
+	line-height: 1.3em;
+
+	margin: 0;
 }
 
 h1{
 font-style: italic;
-color: #000000;
-text-align: center;
-	font-size: 5vw;
-}
-h2{
-font-style: italic;
-color:  #000000;
-	
-	text-align: center;
-	font-size: 4vw;
-}
-h3{
-font-style: italic;
-color:  #000000;
-		font-size: 4vw;
-	text-align: center;
-}
-h4{
-font-style: italic;
-color:  #000000;
-		margin-top: -5px;
-	font-size: 4vw;
-	text-align: center;
-}
-h6{
-	font-style: italic;
-color: #000000;
-	font-size: 1vw;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
-	margin-top: 0px;
-}
-
-h5{
-font-style: 300px;
-color:  #000000;
-		font-size: 1.5vw;
-text-align: center;
-
+color: #ffffff;
+{text-align: center;}
+	margin-left: 490px;
+	font-size: 50px;/*font-size:5vw; /*vw adjusts text to view-port width of screen*/
 }
 p{
 font-style: 300px;
 color:  #000000;
-		font-size: 2vw;
-text-align: center;
-	margin-top: -20px;
-	
+font-size: 15px;/*font-size:1vw; /*vw adjusts text to view-port width of screen*/
+margin-left: 200px;
+	margin-right: 200px;
 }
-
 /*code for TEXT WRAPS starts here*/
 
 /*shape-outside property used for TEXT WRAPS*/
@@ -63,67 +30,47 @@ text-align: center;
   .textwrap1 {
 	  float: left;/* must use float property on all TEXT WRAPS*/
 	  -webkit-shape-outside: rectangle();/*shape outsides avalible; rectangle, circle, ellipse, polygon*/
-    margin:5;
-	  max-width: 390px;/*size of TEXT WRAP IMAGE*/
-	  width: 20%;/*controlling size of TEXT WRAP*/
-  }
-  
-
-/*code for TEXT WRAPS starts here*/
-
-/*shape-outside property used for TEXT WRAPS*/
-
-/*Webkit is a layout engine software component for rendering web pages in web browsers to support your website*/
-
-  .textwrap2 {
-	  float: right;/* must use float property on all TEXT WRAPS*/
-	  -webkit-shape-outside: rectangle();/*shape outsides avalible; rectangle, circle, ellipse, polygon*/
     margin:8;
 	  max-width: 390px;/*size of TEXT WRAP IMAGE*/
 	  width: 20%;/*controlling size of TEXT WRAP*/
   }
-
+  
     img {
   border-radius: 0%;
-	display: inline;
-		margin-left: 150px;
-		   max-width:5000px;
-	  width: 19%;
-
+	margin-top: 50px;
+	  margin-left: 150px;/*images*/
 }
-    .img1 {
-  border-radius: 0%;
-	  margin-left: 0px;/*images*/
-		 max-width: 5000px;
-		width: 100%;	
-}
-    .img2 {
-	  float: left;/*images*/
-		
-}
-    .img3 {
-  border-radius: 0%;
-	  margin-left: 90px;/*images*/
-}
-
-/*.grid-container{
+.grid-container{
 display: grid;
 grid-template-columns: 200px auto;
-grid-template-rows: 100px 350px 800px 100px;
-height: fit-content;
-}*/
+grid-template-rows: 80px 400px 1200px 80px;
+height: 100vh;
+}
+/*.container{
+	box-sizing: border-box;
+	border: 2px solid blue;
+		width: 100%;
+	margin: 0 auto;
+	max-width: 990px; /*can be used to set a fixed max width*/
+/*}
 /* CSS for styling my navigation/Menu */
+.header{
+box-sizing: border-box;
+background-color: #ffd966;
+background-size: cover;
+grid-column-start: 1;
+grid-column-end: span 2;
+	/*height: 50vh; /* view-port height is height of viewing area on screen*/
+}
+
 .nav{
 box-sizing: border-box;
-	background-color: #62b6cb;/*Green*/
+	background-color: #93c47d;/*Green*/
 	grid-column-start: 1;
-	grid-column-end: span 2;
-	height: 15vh;
-		 max-width: 5000px;
-	  width: 100%;	
-}
-	/*max-width: 100%;*/
-/*Burger Menu Starts Here*/
+	grid-column-end: span 2;	
+	/*max-width: 2300px; /*can be used to set a fixed max width*/
+	
+}/*Burger Menu Starts Here*/
 #menuToggle
 {
 	display: block;
@@ -217,7 +164,7 @@ box-sizing: border-box;
 		padding: 80px;
 		padding-top: 125px;
 		
-		background: #87C8D8;
+		background: #FFD533;
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		/* to stop flickering of the textin safari*/
@@ -242,23 +189,31 @@ box-sizing: border-box;
 	/* Burger Menu Ends here */
 	
 
-.header{
-box-sizing: border-box;
-background-size: cover;
-grid-column-start: 1;
-grid-column-end: span 2;
-	/*width: 100%;*/
-height: fit-content;
-		 max-width: 5000px;
-	  width: 100%;	
-}
+
+.content{
+ box-sizing: border-box;
+ background-color: #6d9eeb; /*blue*/
+ position: relative;
+ padding-left:10px;
+ grid-column-start: 1;
+grid-column-end: span 2; /*box to end*/
 	
-/*	.slider {
+}
+
+.scroll-area{
+position: absolute;
+height: 100%;
+overflow: auto;
+}
+/*slide show with images css*/
+	
+/* To set up and call a class from the HTML File we use a . in the CS.*/
+	.slider {
 		position: relative;
-		width: 100%; /*adjustment to show each image on carousel. */
-		/*overflow: hidden; /* overflow hides next image.*/
-	/*	margin-left: 0px;
-		top: 0px;
+		width: 35%; /*adjustment to show each image on carousel. */
+		overflow: hidden; /* overflow hides next image.*/
+		margin-left: 750px;
+		top: 170px;
 	}
 	.images {
 		display: flex;
@@ -269,12 +224,12 @@ height: fit-content;
 		width: 100%; 
 		transition: all 0.16s ease; /* timing tranition to show next image.*/
 
-	/*}
+	}
 	.images input {
 		display: none; /*display none hides the 3 images behind 1st image. */
-	/*}
+	}
 	/*styling dots at bottom of images*/
-/*	.dots {
+	.dots {
 		display: flex;
 		justify-content: center;
 		margin: 5px;
@@ -283,46 +238,24 @@ height: fit-content;
 		height: 20px;
 		width: 20px;
 		border-radius: 50%;
-		border: solid #191472 3px;
+		border: solid #fff 3px;
 		cursor: pointer;
 		transition: all 0.16s ease; /* timing tranition to show next image.*/
-	/*	margin: 5px;
+		margin: 5px;
 	}
-	.dots label:hover {background: #D9375A;}
+	.dots label:hover {background: #fff;}
 	   #img1:checked ~ .m1{ /*~ (tilde) is a selector used to select each"m" element following checked. */
-/*		margin-left: 0;
+		margin-left: 0;
 	}
 		#img2:checked ~ .m2{
 		margin-left: -100%;
 	}
 		#img3:checked ~ .m3{
 		margin-left: -200%; /*margin-left value moves each image to the left*/
-/*	}
+	}
 		#img4:checked ~ .m4{
 		margin-left: -300%;
 	}
-
-/*css for styleing my image slider ends here*/
-
-.content{
- box-sizing: border-box;
- background-color: #ffffff; /*blue*/
- position: relative;
- padding-left: 10px;
- grid-column-start: 1;
-grid-column-end: span 2; /*box to end*/
-height: fit-content;
-		 max-width: 5000px;
-	  width: 100%;	
-}
-
-.scroll-area{
-position: absolute;
-height: 100%;
-overflow: auto;
-}
-
-
 	
 /*css for styleing my back to top button*/
 #myBtn {
@@ -334,7 +267,7 @@ overflow: auto;
 	font-size: 20px;
 	border: none;
 	outline: none;
-	background-color: #62b6cb;/*Calling up my varible Color to be used.*/
+	background-color: #FFD533;/*Calling up my varible Color to be used.*/
 	color: black;
 	cursor: pointer; /* Setting the icon to be used for my button on hover. https://www.w3schools.com/cssref/trvit.php?filename=trvcss_cursor. */
 	padding: 15px;
@@ -343,12 +276,7 @@ overflow: auto;
 #myBtn:hover {
 	background-color: #ffffff; /*Calling up my varible Color to be used.*/
 }
-
 .footer{
-background-color: #62b6cb; /*green*/
+background-color: #e06666; /*green*/
 grid-column-end: span 2;
-
-height: 15vh;
-		 max-width: 5000px;
-	  width: 100%;	
 }
